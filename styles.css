@@ -1,0 +1,48 @@
+ul#menuBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.menuBarItem {
+  float: left;
+}
+
+#menuBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menuBar li a:hover {
+  background-color: #111;
+}
+
+
+li.active {
+  background-color: #FFDDD2;
+}
+
+#menuBar li.active a {
+  color: #333;
+}
+
+#menuBar li.active a:hover {
+  background-color: #FFDDD2;
+}
+
+body {
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.heading {
+  color: pink;
+}
+
+h1.heading {
+  color: pink;
+}
