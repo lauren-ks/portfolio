@@ -1,16 +1,21 @@
-ul#menuBar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+@media screen {
+  #menuBar {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
 }
 
-li.menuBarItem {
-  float: left;
+@media screen and (min-width: 768px) {
+  #menuBar {
+    flex-direction: row;
+  }
 }
 
-#menuBar li a {
+#menuBar a {
   display: block;
   color: white;
   text-align: center;
@@ -18,20 +23,20 @@ li.menuBarItem {
   text-decoration: none;
 }
 
-#menuBar li a:hover {
+#menuBar a:hover {
   background-color: #111;
 }
 
 
-li.active {
+.active {
   background-color: #FFDDD2;
 }
 
-#menuBar li.active a {
+#menuBar .active a {
   color: #333;
 }
 
-#menuBar li.active a:hover {
+#menuBar .active a:hover {
   background-color: #FFDDD2;
 }
 
